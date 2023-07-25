@@ -1,0 +1,23 @@
+POST http://localhost:3000/books/harry potter 2/j.k.%20rowling
+
+###
+
+GET http://localhost:3000/books
+
+###
+
+GET http://localhost:3000/books/3
+
+###
+
+POST http://localhost:3000/books?author=j.k.%20rowling&title=harry potter 3
+
+###
+
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "harry potter 4",
+    "author": "J.K. Rownling"
+}
